@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VENUS Athens Riviera · Avla Gayrimenkul · Atina Golden Visa</title>
+<meta name="description" content="Athens Riviera'nın yeni odak noktası Elliniko'da, Aphroditis 24'te yükselen Venus — Tier-3 Golden Visa uyumlu, marina manzaralı 86 ünite. €780K'dan başlayan fiyatlarla.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root{
+  --cream:#FAF7EE; --cream-deep:#F0EAD8; --paper:#FFFEFA;
+  --ink:#1A2D2A; --ink-soft:#2D453F; --grey:#5C6E68;
+  --forest:#3F7652; --forest-deep:#1B5B3F; --forest-light:#7CA88A;
+  --gold:#D3BD98; --gold-warm:#E5CFA8;
+  --coral:#EA492E; --coral-soft:#FF7960;
+  --sun:#F5C842; --sun-soft:#FCEAA0;
+  --sky:#A8C9D0;
+  --line:rgba(26,45,42,0.10);
+}
+html{ scroll-behavior:smooth; }
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+.serif{ font-family:'Cormorant Garamond',serif; }
+img{ max-width:100%; display:block; }
+a{ color:inherit; }
+
+/* ── MOKAP BANNER ─────────────────────────── */
+.mokap-banner{
+  position:fixed; top:0; left:0; right:0; z-index:300;
+  background:var(--forest); color:var(--cream);
+  text-align:center; padding:9px 24px;
+  font-size:12px; font-weight:600; letter-spacing:0.06em;
+}
+.mokap-banner a{ color:var(--sun); text-decoration:underline; margin-left:14px; font-weight:700; }
+
+/* ── TOPBAR ───────────────────────────────── */
+.topbar{
+  margin-top:36px;
+  background:var(--ink); color:var(--cream);
+  font-size:12px; letter-spacing:0.04em;
+}
+.topbar-inner{
+  max-width:1380px; margin:0 auto; padding:11px 32px;
+  display:flex; justify-content:space-between; align-items:center; gap:20px;
+}
+.topbar-info{ display:flex; gap:22px; opacity:0.75; }
+.topbar-info span::before{ content:"❋"; margin-right:8px; color:var(--gold); }
+.lang{ display:flex; gap:14px; }
+.lang button{
+  background:none; border:none; color:var(--cream);
+  font-size:12px; cursor:pointer; padding:4px 8px;
+  letter-spacing:0.06em; opacity:0.5;
+  font-family:'Inter',sans-serif; font-weight:500;
+}
+.lang button.active{ opacity:1; color:var(--gold); }
+
+/* ── HEADER (LANDING-MINIMAL) ──────────────── */
+.header{
+  background:var(--cream);
+  position:sticky; top:36px; z-index:100;
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1380px; margin:0 auto; padding:18px 32px;
+  display:flex; justify-content:space-between; align-items:center; gap:32px;
+}
+.brand-row{
+  display:flex; align-items:center; gap:18px;
+}
+.brand{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px; font-weight:500;
+  color:var(--ink); text-decoration:none;
+  letter-spacing:0.01em;
+}
+.brand em{ font-style:italic; color:var(--forest); font-weight:600; }
+.brand-divider{
+  width:1px; height:32px; background:var(--line);
+}
+.project-mark{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic; font-weight:500;
+  font-size:22px; color:var(--forest);
+  line-height:1;
+}
+.project-mark small{
+  display:block;
+  font-family:'Inter',sans-serif; font-style:normal;
+  font-size:10px; letter-spacing:0.18em;
+  color:var(--grey); font-weight:600; text-transform:uppercase;
+  margin-top:4px;
+}
+.header-cta-row{ display:flex; gap:12px; align-items:center; }
+.header-link{
+  font-size:13px; font-weight:500; color:var(--ink);
+  text-decoration:none; letter-spacing:0.02em;
+}
+.header-link:hover{ color:var(--forest); }
+.cta-wa{
+  background:var(--coral); color:#fff;
+  padding:11px 22px; border-radius:30px;
+  text-decoration:none; font-size:13px; font-weight:600;
+  display:inline-flex; align-items:center; gap:8px;
+  transition:all 0.2s;
+}
+.cta-wa:hover{ background:var(--ink); }
+.cta-form-trigger{
+  background:var(--forest); color:#fff;
+  padding:11px 22px; border-radius:30px;
+  border:none; cursor:pointer;
+  font-family:'Inter',sans-serif;
+  font-size:13px; font-weight:600;
+  display:inline-flex; align-items:center; gap:8px;
+}
+.cta-form-trigger:hover{ background:var(--ink); }
+
+/* ── HERO ─────────────────────────────────── */
+.hero{
+  padding:60px 32px 80px;
+  position:relative;
+  background:linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+}
+.hero::before{
+  content:""; position:absolute; top:0; right:0; bottom:0; width:48%;
+  background:radial-gradient(circle at 70% 35%, var(--sun-soft) 0%, transparent 70%);
+  opacity:0.6; z-index:0;
+}
+.hero-grid{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;
+  position:relative; z-index:1;
+}
+.hero-eye{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:12px; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--forest); font-weight:700; margin-bottom:24px;
+}
+.hero-eye::before{
+  content:""; width:30px; height:1px; background:var(--forest);
+}
+.hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:400;
+  font-size:clamp(54px,6.2vw,90px);
+  line-height:1.02; letter-spacing:-0.02em;
+  color:var(--ink); margin-bottom:26px;
+}
+.hero h1 em{ color:var(--forest); font-style:italic; font-weight:500; }
+.hero h1 .acc{ color:var(--coral); font-style:italic; font-weight:500; }
+.hero-lead{
+  font-size:17px; line-height:1.7; color:var(--ink-soft);
+  margin-bottom:32px; max-width:540px;
+}
+.hero-lead strong{ color:var(--ink); font-weight:600; }
+.hero-cta-row{ display:flex; gap:14px; margin-bottom:42px; flex-wrap:wrap; }
+.btn{
+  padding:15px 28px; border-radius:30px;
+  text-decoration:none; font-size:13px; font-weight:600;
+  letter-spacing:0.04em; transition:all 0.2s;
+  display:inline-flex; align-items:center; gap:9px;
+  border:none; cursor:pointer; font-family:'Inter',sans-serif;
+}
+.btn-primary{ background:var(--coral); color:#fff; }
+.btn-primary:hover{ background:var(--ink); }
+.btn-ghost{
+  background:var(--paper); color:var(--ink);
+  border:1px solid var(--line);
+}
+.btn-ghost:hover{ background:var(--ink); color:var(--cream); border-color:var(--ink); }
+
+.stats-row{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:22px 0;
+}
+.stat-cell{ border-right:1px solid var(--line); padding:0 22px; }
+.stat-cell:first-child{ padding-left:0; }
+.stat-cell:last-child{ border-right:none; }
+.stat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:38px; font-weight:600; color:var(--forest);
+  line-height:1; margin-bottom:6px; letter-spacing:-0.01em;
+}
+.stat-num em{ font-style:italic; color:var(--coral); }
+.stat-lab{
+  font-size:11px; letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--grey); font-weight:600;
+}
+
+/* HERO MOSAIC */
+.hero-mosaic{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  grid-template-rows:300px 230px;
+  gap:14px;
+  position:relative;
+}
+.hero-mosaic > div{
+  background-size:cover; background-position:center;
+  border-radius:8px; box-shadow:0 30px 60px rgba(26,45,42,0.15);
+  filter:saturate(1.08) brightness(1.04);
+  position:relative;
+}
+.hero-mosaic > div:nth-child(1){
+  grid-row:1 / 3;
+  background-image:url('assets/16_Venus_Athens_Riviera.jpg');
+}
+.hero-mosaic > div:nth-child(2){
+  background-image:url('assets/landing_int_x16_lg.jpg');
+}
+.hero-mosaic > div:nth-child(3){
+  background-image:url('assets/landing_amb_14_lg.jpg');
+}
+.hero-leaf{
+  position:absolute; top:24px; right:24px;
+  background:var(--sun); color:var(--ink);
+  padding:8px 16px; border-radius:24px;
+  font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
+  font-weight:700;
+}
+.hero-tag-bottom{
+  position:absolute; bottom:24px; left:24px;
+  background:var(--cream); color:var(--ink);
+  padding:14px 18px; border-radius:6px;
+  font-family:'Cormorant Garamond',serif;
+}
+.hero-tag-bottom-lab{
+  font-size:10px; letter-spacing:0.16em; text-transform:uppercase;
+  font-family:'Inter',sans-serif; color:var(--grey); font-weight:600;
+}
+.hero-tag-bottom-val{
+  font-size:22px; font-weight:600; color:var(--forest);
+  font-style:italic;
+}
+
+/* ── FACT STRIP ────────────────────────────── */
+.fact-strip{
+  background:var(--ink); color:var(--cream);
+  padding:24px 32px;
+}
+.fact-strip-inner{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(5,1fr); gap:30px;
+  align-items:center;
+}
+.fs-item{ display:flex; flex-direction:column; gap:4px; }
+.fs-lab{
+  font-size:10px; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--gold); font-weight:700;
+}
+.fs-val{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic; font-weight:500;
+  font-size:22px; color:var(--cream);
+}
+.fs-tier{
+  background:var(--coral); color:#fff;
+  padding:10px 18px; border-radius:26px;
+  font-family:'Inter',sans-serif;
+  font-size:12px; font-weight:700; letter-spacing:0.08em;
+  text-transform:uppercase; text-align:center;
+  display:inline-block; justify-self:end;
+}
+
+/* ── SECTIONS ────────────────────────────── */
+.section{ padding:100px 32px; }
+.section-paper{ background:var(--paper); }
+.section-mint{ background:linear-gradient(180deg, var(--cream) 0%, #E8F1E5 100%); }
+.section-warm{ background:var(--cream-deep); }
+.section-dark{
+  background:linear-gradient(135deg, var(--ink) 0%, var(--forest-deep) 100%);
+  color:var(--cream);
+  position:relative; overflow:hidden;
+}
+.section-dark::before{
+  content:""; position:absolute; top:0; right:0; width:50%; height:100%;
+  background:radial-gradient(circle at 80% 30%, rgba(245,200,66,0.15) 0%, transparent 60%);
+}
+
+.section-head{
+  max-width:1380px; margin:0 auto 60px;
+  display:flex; justify-content:space-between; align-items:flex-end; gap:50px;
+  flex-wrap:wrap;
+  position:relative; z-index:1;
+}
+.section-eye{
+  font-size:11px; letter-spacing:0.22em; text-transform:uppercase;
+  color:var(--forest); font-weight:700; margin-bottom:14px;
+}
+.section-dark .section-eye{ color:var(--sun); }
+.section-title{
+  font-family:'Cormorant Garamond',serif; font-weight:400;
+  font-size:clamp(40px,5.2vw,68px); line-height:1.05;
+  letter-spacing:-0.015em; color:var(--ink); max-width:760px;
+}
+.section-dark .section-title{ color:var(--cream); }
+.section-title em{ color:var(--forest); font-style:italic; font-weight:500; }
+.section-dark .section-title em{ color:var(--sun); }
+.section-title .acc{ color:var(--coral); font-style:italic; font-weight:500; }
+.section-lead{
+  max-width:380px; font-size:15px; color:var(--ink-soft); line-height:1.7;
+}
+.section-dark .section-lead{ color:rgba(255,255,255,0.78); }
+
+/* ── CONCEPT (SPLIT) ──────────────────────── */
+.concept-grid{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;
+}
+.concept-text p{
+  font-size:16px; line-height:1.85; color:var(--ink-soft);
+  margin-bottom:18px; max-width:560px;
+}
+.concept-text p strong{ color:var(--ink); font-weight:600; }
+.concept-mosaic{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:230px 230px;
+  gap:14px;
+}
+.concept-mosaic > div{
+  background-size:cover; background-position:center;
+  border-radius:8px; filter:saturate(1.06) brightness(1.04);
+}
+.concept-mosaic > div:nth-child(1){ grid-column:1 / 3; background-image:url('assets/landing_ext_front_lg.jpg'); }
+.concept-mosaic > div:nth-child(2){ background-image:url('assets/landing_amb_14_lg.jpg'); }
+.concept-mosaic > div:nth-child(3){ background-image:url('assets/landing_amb_7_lg.jpg'); }
+
+/* ── TYPES TABLE ─────────────────────────── */
+.types-grid{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+}
+.type-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:10px; padding:32px 28px;
+  position:relative; overflow:hidden;
+  transition:all 0.3s;
+}
+.type-card:hover{ transform:translateY(-6px); box-shadow:0 24px 50px rgba(26,45,42,0.1); }
+.type-card.featured{
+  background:linear-gradient(135deg, var(--forest) 0%, var(--ink) 100%);
+  color:var(--cream); border:none;
+}
+.type-corner{
+  position:absolute; top:18px; right:-44px;
+  background:var(--coral); color:#fff;
+  padding:7px 50px; transform:rotate(45deg);
+  font-size:10px; letter-spacing:0.12em; font-weight:700;
+  text-transform:uppercase;
+}
+.type-tag{
+  font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--coral); font-weight:700; margin-bottom:14px;
+}
+.type-card.featured .type-tag{ color:var(--sun); }
+.type-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:38px; font-weight:500;
+  font-style:italic; line-height:1; margin-bottom:8px;
+}
+.type-size{
+  font-size:13px; color:var(--grey); margin-bottom:24px;
+  font-family:'Inter',sans-serif;
+}
+.type-card.featured .type-size{ color:var(--gold-warm); }
+.type-price-lab{
+  font-size:10px; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--grey); font-weight:700; margin-bottom:6px;
+}
+.type-card.featured .type-price-lab{ color:var(--gold-warm); }
+.type-price{
+  font-family:'Cormorant Garamond',serif;
+  font-size:42px; font-weight:600; font-style:italic;
+  color:var(--coral); line-height:1; margin-bottom:22px;
+}
+.type-card.featured .type-price{ color:var(--sun); }
+.type-features{
+  list-style:none; padding-top:18px;
+  border-top:1px solid var(--line);
+}
+.type-card.featured .type-features{ border-top-color:rgba(255,255,255,0.15); }
+.type-features li{
+  padding:8px 0; font-size:13px; color:var(--ink-soft);
+  display:flex; align-items:flex-start; gap:10px;
+}
+.type-card.featured .type-features li{ color:var(--cream); opacity:0.88; }
+.type-features li::before{
+  content:"❋"; color:var(--forest); font-size:11px; flex-shrink:0;
+}
+.type-card.featured .type-features li::before{ color:var(--sun); }
+.type-cta{
+  margin-top:24px;
+  width:100%; padding:13px;
+  background:var(--coral); color:#fff;
+  border-radius:26px; text-align:center;
+  text-decoration:none; font-size:12px; font-weight:700;
+  letter-spacing:0.06em; text-transform:uppercase;
+  display:block;
+  transition:all 0.2s;
+}
+.type-cta:hover{ background:var(--ink); }
+.type-card.featured .type-cta{ background:var(--sun); color:var(--ink); }
+.type-card.featured .type-cta:hover{ background:var(--cream); }
+
+.types-foot{
+  max-width:1380px; margin:40px auto 0;
+  padding:24px 28px; background:var(--cream-deep);
+  border-radius:10px;
+  display:flex; justify-content:space-between; align-items:center;
+  gap:30px; flex-wrap:wrap;
+}
+.types-foot-text{
+  font-size:14px; color:var(--ink-soft); line-height:1.55;
+  max-width:600px;
+}
+.types-foot-text strong{ color:var(--forest); font-weight:700; }
+
+/* ── GALLERY ───────────────────────────── */
+.gallery-mosaic{
+  max-width:1380px; margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:300px 280px 280px;
+  gap:14px;
+}
+.gallery-mosaic > div{
+  background-size:cover; background-position:center;
+  border-radius:8px; position:relative; overflow:hidden;
+  cursor:pointer; transition:all 0.3s;
+  filter:saturate(1.08) brightness(1.05);
+}
+.gallery-mosaic > div:hover{ transform:scale(1.02); }
+.gallery-mosaic > div:nth-child(1){
+  grid-column:1 / 3; grid-row:1 / 3;
+  background-image:url('assets/16_Venus_Athens_Riviera.jpg');
+}
+.gallery-mosaic > div:nth-child(2){ background-image:url('assets/landing_int_x16_lg.jpg'); }
+.gallery-mosaic > div:nth-child(3){ background-image:url('assets/landing_int_x17_lg.jpg'); }
+.gallery-mosaic > div:nth-child(4){ background-image:url('assets/landing_amb_14_lg.jpg'); }
+.gallery-mosaic > div:nth-child(5){ background-image:url('assets/landing_int_2x2_lg.jpg'); }
+.gallery-mosaic > div:nth-child(6){
+  grid-column:3 / 5;
+  background-image:url('assets/landing_ext_side1_lg.jpg');
+}
+.gallery-mosaic > div:nth-child(7){ background-image:url('assets/landing_amb_7_lg.jpg'); }
+.gallery-cap{
+  position:absolute; bottom:14px; left:14px;
+  background:rgba(255,255,255,0.95); color:var(--ink);
+  padding:6px 13px; border-radius:18px;
+  font-size:11px; font-weight:600; letter-spacing:0.04em;
+}
+
+/* ── AMENITIES ─────────────────────────── */
+.amenities-grid{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
+}
+.am-card{
+  background:var(--paper);
+  border-radius:8px; padding:28px 22px;
+  border:1px solid var(--line);
+  transition:all 0.3s;
+}
+.am-card:hover{ transform:translateY(-4px); box-shadow:0 14px 30px rgba(26,45,42,0.08); }
+.am-icon{
+  width:48px; height:48px; border-radius:50%;
+  background:var(--cream-deep); color:var(--forest);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px; font-weight:600; font-style:italic;
+  margin-bottom:14px;
+}
+.am-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px; font-weight:600; font-style:italic;
+  color:var(--ink); margin-bottom:6px;
+}
+.am-text{
+  font-size:13px; color:var(--ink-soft); line-height:1.55;
+}
+
+/* ── LOCATION ──────────────────────────── */
+.location-inner{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:1fr 1.2fr; gap:60px; align-items:center;
+}
+.location-poi{ list-style:none; padding:0; }
+.location-poi li{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:16px 0; border-bottom:1px dashed var(--line);
+  font-size:14px;
+}
+.location-poi li:last-child{ border-bottom:none; }
+.location-poi li b{
+  font-weight:500; color:var(--ink);
+  font-family:'Cormorant Garamond',serif;
+  font-size:19px; font-style:italic;
+}
+.location-poi li span{
+  color:var(--coral); font-weight:700;
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px; font-style:italic;
+}
+.location-map{
+  height:520px; border-radius:12px;
+  background-image:linear-gradient(135deg, rgba(26,45,42,0.55), rgba(63,118,82,0.55)),
+                   url('assets/landing_ext_front_lg.jpg');
+  background-size:cover; background-position:center;
+  display:flex; align-items:center; justify-content:center;
+  position:relative;
+}
+.map-pin{
+  width:84px; height:84px; border-radius:50%;
+  background:var(--coral); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:38px; font-style:italic; font-weight:600;
+  box-shadow:0 16px 40px rgba(234,73,46,0.5);
+  border:4px solid var(--cream);
+  position:relative;
+}
+.map-pin::after{
+  content:""; position:absolute; inset:-14px;
+  border-radius:50%; border:2px solid var(--coral);
+  opacity:0.45; animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%{ transform:scale(1); opacity:0.45; }
+  100%{ transform:scale(1.6); opacity:0; }
+}
+.map-address{
+  position:absolute; bottom:20px; left:20px;
+  background:var(--cream); color:var(--ink);
+  padding:14px 18px; border-radius:8px;
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+}
+.map-address-l{
+  font-family:'Inter',sans-serif; font-style:normal;
+  font-size:10px; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--grey); font-weight:600; margin-bottom:4px;
+}
+.map-address-v{
+  font-size:18px; font-weight:600; color:var(--forest);
+}
+
+/* ── GV TIMELINE ───────────────────────── */
+.gv-detail{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:1fr 1.4fr; gap:60px; align-items:flex-start;
+  position:relative; z-index:1;
+}
+.gv-card-hero{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:14px; padding:40px;
+  backdrop-filter:blur(10px);
+}
+.gv-tier-badge{
+  display:inline-flex; align-items:center; gap:10px;
+  padding:8px 16px; border-radius:24px;
+  background:var(--coral); color:#fff;
+  font-size:11px; font-weight:700; letter-spacing:0.12em;
+  text-transform:uppercase; margin-bottom:24px;
+}
+.gv-amount{
+  font-family:'Cormorant Garamond',serif;
+  font-size:88px; font-weight:500; font-style:italic;
+  color:var(--sun); line-height:1; letter-spacing:-0.02em;
+  margin-bottom:12px;
+}
+.gv-amount sup{
+  font-size:36px; vertical-align:top; font-style:normal; opacity:0.6;
+}
+.gv-amount-meta{
+  font-size:13px; color:rgba(255,255,255,0.75);
+  margin-bottom:30px;
+}
+.gv-benefits{
+  list-style:none; padding-top:24px;
+  border-top:1px solid rgba(255,255,255,0.15);
+}
+.gv-benefits li{
+  padding:10px 0; font-size:14px;
+  color:rgba(255,255,255,0.88);
+  display:flex; align-items:flex-start; gap:12px;
+}
+.gv-benefits li::before{
+  content:"❋"; color:var(--sun); font-size:12px; flex-shrink:0;
+  margin-top:4px;
+}
+.timeline{
+  list-style:none; padding:0; position:relative;
+}
+.timeline::before{
+  content:""; position:absolute;
+  left:21px; top:14px; bottom:14px;
+  width:2px; background:rgba(255,255,255,0.15);
+}
+.step{
+  position:relative; padding-left:64px;
+  padding-bottom:32px;
+}
+.step:last-child{ padding-bottom:0; }
+.step-num{
+  position:absolute; left:0; top:0;
+  width:44px; height:44px; border-radius:50%;
+  background:var(--sun); color:var(--ink);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px; font-weight:600; font-style:italic;
+  border:3px solid var(--ink);
+  z-index:1;
+}
+.step-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px; font-weight:500; font-style:italic;
+  color:var(--cream); margin-bottom:6px; line-height:1.1;
+}
+.step-text{
+  font-size:14px; line-height:1.7;
+  color:rgba(255,255,255,0.7);
+  max-width:520px;
+}
+.step-meta{
+  display:inline-block; margin-top:8px;
+  font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--sun); font-weight:700;
+}
+
+/* ── AVLA 3 ADVANTAGES ────────────────── */
+.adv-grid{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+}
+.adv-card{
+  background:var(--paper);
+  border-radius:10px; padding:36px 30px;
+  border:1px solid var(--line);
+  transition:all 0.3s;
+}
+.adv-card:hover{ transform:translateY(-6px); box-shadow:0 24px 50px rgba(26,45,42,0.1); }
+.adv-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:54px; font-weight:500; font-style:italic;
+  color:var(--coral); line-height:1; margin-bottom:18px;
+}
+.adv-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px; font-weight:600; font-style:italic;
+  color:var(--ink); margin-bottom:14px;
+  line-height:1.15;
+}
+.adv-text{
+  font-size:14px; line-height:1.7; color:var(--ink-soft);
+}
+.adv-text strong{ color:var(--forest); font-weight:700; }
+
+/* ── DEVELOPER TRUST ──────────────────── */
+.dev-trust{
+  max-width:1380px; margin:0 auto;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:14px;
+  display:grid; grid-template-columns:1fr 1.4fr;
+  align-items:stretch;
+  overflow:hidden;
+}
+.dev-trust-photo{
+  background-image:linear-gradient(135deg, rgba(63,118,82,0.45), rgba(27,91,63,0.45)),
+                   url('assets/landing_ext_side1_lg.jpg');
+  background-size:cover; background-position:center;
+  min-height:380px;
+  display:flex; align-items:flex-end;
+  padding:36px;
+}
+.dev-trust-tag{
+  background:var(--cream); color:var(--ink);
+  padding:14px 22px; border-radius:8px;
+  font-family:'Cormorant Garamond',serif;
+}
+.dev-trust-tag-l{
+  font-family:'Inter',sans-serif;
+  font-size:10px; letter-spacing:0.18em; text-transform:uppercase;
+  color:var(--grey); font-weight:600;
+}
+.dev-trust-tag-v{
+  font-size:24px; font-style:italic; font-weight:600;
+  color:var(--forest); margin-top:2px;
+}
+.dev-trust-body{ padding:46px 50px; }
+.dev-trust-body h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:34px; font-weight:500; font-style:italic;
+  color:var(--ink); margin-bottom:18px; line-height:1.1;
+}
+.dev-trust-body h3 em{ color:var(--forest); font-style:italic; }
+.dev-trust-body p{
+  font-size:15px; line-height:1.75; color:var(--ink-soft);
+  margin-bottom:20px;
+}
+.dev-trust-stats{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:0;
+  padding-top:22px; margin-top:6px;
+  border-top:1px solid var(--line);
+}
+.dts-cell{
+  padding:0 18px; border-right:1px solid var(--line);
+}
+.dts-cell:first-child{ padding-left:0; }
+.dts-cell:last-child{ border-right:none; }
+.dts-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px; font-weight:600; font-style:italic;
+  color:var(--forest); line-height:1; margin-bottom:4px;
+}
+.dts-lab{
+  font-size:10px; letter-spacing:0.16em; text-transform:uppercase;
+  color:var(--grey); font-weight:700;
+}
+
+/* ── INVESTMENT CALC ──────────────────── */
+.calc-inner{
+  max-width:1180px; margin:0 auto;
+  position:relative; z-index:1;
+  display:grid; grid-template-columns:1fr 1.3fr; gap:60px; align-items:flex-start;
+}
+.calc-lead{
+  font-size:15px; line-height:1.7; color:rgba(255,255,255,0.78);
+  margin-bottom:30px; max-width:380px;
+}
+.calc-form{
+  background:var(--cream);
+  border-radius:14px; padding:36px;
+  color:var(--ink);
+}
+.calc-row{ margin-bottom:20px; }
+.calc-row label{
+  display:block; font-size:11px; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--grey); font-weight:700;
+  margin-bottom:8px;
+}
+.calc-row select{
+  width:100%; padding:12px 16px;
+  border:1px solid var(--line); border-radius:8px;
+  font-family:'Inter',sans-serif; font-size:14px;
+  background:var(--paper); color:var(--ink);
+}
+.calc-result{
+  margin-top:24px; padding:24px;
+  background:var(--cream-deep); border-radius:10px;
+  display:grid; grid-template-columns:1fr 1fr; gap:14px;
+}
+.calc-result-item b{
+  display:block; font-size:10px; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--grey); font-weight:700;
+  margin-bottom:6px;
+}
+.calc-result-item span{
+  font-family:'Cormorant Garamond',serif;
+  font-size:24px; font-weight:600; font-style:italic;
+  color:var(--forest);
+}
+
+/* ── FAQ ─────────────────────────────── */
+.faq-inner{
+  max-width:1080px; margin:0 auto;
+}
+.faq-list details{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:10px;
+  margin-bottom:14px;
+  overflow:hidden;
+}
+.faq-list summary{
+  list-style:none; cursor:pointer;
+  padding:24px 28px;
+  display:flex; justify-content:space-between; align-items:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:21px; font-weight:600; font-style:italic;
+  color:var(--ink);
+  gap:20px;
+}
+.faq-list summary::-webkit-details-marker{ display:none; }
+.faq-list summary::after{
+  content:"+"; font-family:'Inter',sans-serif;
+  font-size:24px; color:var(--coral); font-weight:300;
+  width:28px; height:28px; border-radius:50%;
+  background:var(--cream-deep);
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0; transition:all 0.2s;
+}
+.faq-list details[open] summary::after{
+  content:"−"; background:var(--coral); color:#fff;
+}
+.faq-list .faq-body{
+  padding:0 28px 26px;
+  font-size:14.5px; line-height:1.75; color:var(--ink-soft);
+  max-width:880px;
+}
+.faq-list .faq-body strong{ color:var(--ink); font-weight:600; }
+
+/* ── CTA BANNER ──────────────────────── */
+.cta-banner{
+  margin:0 32px;
+  background:linear-gradient(135deg, var(--forest) 0%, var(--forest-deep) 100%);
+  border-radius:14px;
+  padding:80px 60px;
+  display:flex; justify-content:space-between; align-items:center; gap:50px;
+  flex-wrap:wrap;
+  position:relative; overflow:hidden;
+}
+.cta-banner::before{
+  content:""; position:absolute; top:-100px; right:-100px;
+  width:400px; height:400px;
+  background:radial-gradient(circle, var(--sun) 0%, transparent 70%);
+  opacity:0.25;
+}
+.cta-banner-text{ position:relative; z-index:2; max-width:680px; }
+.cta-banner h2{
+  font-family:'Cormorant Garamond',serif; font-weight:400;
+  font-size:clamp(36px,4.4vw,58px); line-height:1.05;
+  color:var(--cream); margin-bottom:16px; letter-spacing:-0.015em;
+}
+.cta-banner h2 em{ font-style:italic; color:var(--sun); font-weight:500; }
+.cta-banner p{ color:rgba(255,255,255,0.85); font-size:16px; line-height:1.55; }
+.cta-banner-actions{ position:relative; z-index:2; display:flex; gap:14px; flex-wrap:wrap; }
+.cta-banner .btn-primary{ background:var(--coral); }
+.cta-banner .btn-ghost{
+  background:transparent; color:var(--cream); border-color:var(--cream);
+}
+.cta-banner .btn-ghost:hover{ background:var(--cream); color:var(--ink); }
+
+/* ── FOOTER (MINIMAL) ────────────────── */
+.footer{
+  background:var(--ink); color:var(--cream);
+  padding:60px 32px 30px;
+}
+.footer-grid{
+  max-width:1380px; margin:0 auto;
+  display:grid; grid-template-columns:2fr 1fr 1fr; gap:60px;
+  margin-bottom:40px;
+}
+.footer-brand .brand{ color:var(--cream); font-size:34px; }
+.footer-brand .brand em{ color:var(--gold); }
+.footer-brand p{
+  margin:14px 0 18px; font-size:13px; line-height:1.65;
+  color:rgba(255,255,255,0.65); max-width:380px;
+}
+.footer-col h4{
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-size:17px; font-weight:500; margin-bottom:16px;
+  color:var(--gold);
+}
+.footer-col a{
+  display:block; padding:5px 0; font-size:13px;
+  color:rgba(255,255,255,0.65); text-decoration:none;
+}
+.footer-col a:hover{ color:var(--cream); }
+.footer-bottom{
+  max-width:1380px; margin:0 auto; padding-top:24px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; gap:16px;
+  font-size:11px; color:rgba(255,255,255,0.45); letter-spacing:0.05em;
+}
+
+/* ── STICKY BOTTOM CTA (mobil + scroll) ── */
+.sticky-bottom{
+  position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+  z-index:80;
+  background:var(--ink); color:var(--cream);
+  border-radius:50px; padding:8px 8px 8px 24px;
+  display:flex; align-items:center; gap:18px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+.sticky-bottom-text{
+  font-size:13px; line-height:1.2;
+}
+.sticky-bottom-text strong{
+  display:block;
+  font-family:'Cormorant Garamond',serif; font-style:italic;
+  font-size:15px; color:var(--sun); font-weight:600;
+}
+.sticky-bottom-btn{
+  background:var(--coral); color:#fff;
+  padding:11px 22px; border-radius:40px;
+  text-decoration:none; border:none; cursor:pointer;
+  font-size:13px; font-weight:700;
+  font-family:'Inter',sans-serif;
+}
+.sticky-bottom-btn:hover{ background:var(--gold); color:var(--ink); }
+
+/* ── DRAWER (form, sağdan kayar) ──────── */
+.drawer-overlay{
+  position:fixed; inset:0; z-index:200;
+  background:rgba(26,45,42,0.6);
+  opacity:0; pointer-events:none;
+  transition:opacity 0.3s;
+}
+.drawer-overlay.open{ opacity:1; pointer-events:auto; }
+.drawer{
+  position:fixed; top:0; right:-520px; bottom:0;
+  width:520px; max-width:100%;
+  background:var(--cream); z-index:210;
+  transition:right 0.4s cubic-bezier(.2,.8,.2,1);
+  display:flex; flex-direction:column;
+  box-shadow:-30px 0 60px rgba(26,45,42,0.25);
+}
+.drawer.open{ right:0; }
+.drawer-head{
+  padding:24px 32px;
+  border-bottom:1px solid var(--line);
+  display:flex; justify-content:space-between; align-items:center;
+  background:var(--ink); color:var(--cream);
+}
+.drawer-head h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px; font-weight:500; font-style:italic;
+}
+.drawer-head h3 em{ color:var(--sun); font-style:italic; }
+.drawer-close{
+  background:rgba(255,255,255,0.1); color:#fff;
+  width:36px; height:36px; border-radius:50%;
+  border:none; cursor:pointer;
+  font-size:20px; font-weight:300;
+  display:flex; align-items:center; justify-content:center;
+}
+.drawer-close:hover{ background:var(--coral); }
+.drawer-body{
+  padding:30px 32px;
+  flex:1; overflow-y:auto;
+}
+.drawer-intro{
+  font-size:14px; color:var(--ink-soft); line-height:1.6;
+  margin-bottom:24px;
+}
+.drawer-field{ margin-bottom:18px; }
+.drawer-field label{
+  display:block; font-size:11px; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--grey); font-weight:700;
+  margin-bottom:8px;
+}
+.drawer-field input,
+.drawer-field select,
+.drawer-field textarea{
+  width:100%; padding:13px 16px;
+  border:1px solid var(--line); border-radius:8px;
+  font-family:'Inter',sans-serif; font-size:14px;
+  background:var(--paper); color:var(--ink);
+}
+.drawer-field input:focus,
+.drawer-field select:focus,
+.drawer-field textarea:focus{
+  outline:none; border-color:var(--forest);
+}
+.drawer-field textarea{ resize:vertical; min-height:90px; }
+.drawer-submit{
+  width:100%; padding:16px;
+  background:var(--coral); color:#fff;
+  border:none; border-radius:30px;
+  font-family:'Inter',sans-serif;
+  font-size:14px; font-weight:700; letter-spacing:0.04em;
+  cursor:pointer; margin-top:6px;
+  transition:all 0.2s;
+}
+.drawer-submit:hover{ background:var(--ink); }
+.drawer-foot{
+  padding:18px 32px;
+  border-top:1px solid var(--line);
+  font-size:11px; color:var(--grey); text-align:center;
+  line-height:1.5;
+}
+.drawer-foot a{ color:var(--forest); font-weight:700; text-decoration:none; }
+
+/* ── RESPONSIVE ──────────────────── */
+@media (max-width:1024px){
+  .hero-grid, .concept-grid,
+  .location-inner, .gv-detail,
+  .calc-inner, .dev-trust{ grid-template-columns:1fr; gap:40px; }
+  .dev-trust{ border-radius:14px; }
+  .dev-trust-photo{ min-height:280px; }
+  .dev-trust-body{ padding:32px 28px; }
+  .fact-strip-inner{ grid-template-columns:repeat(2,1fr); gap:18px; }
+  .fs-tier{ grid-column:1 / 3; justify-self:start; }
+  .types-grid, .adv-grid{ grid-template-columns:1fr; }
+  .amenities-grid{ grid-template-columns:repeat(2,1fr); }
+  .gallery-mosaic{ grid-template-columns:1fr 1fr; grid-template-rows:repeat(4,200px); }
+  .gallery-mosaic > div:nth-child(1){ grid-column:1 / 3; grid-row:1; }
+  .gallery-mosaic > div:nth-child(6){ grid-column:1 / 3; grid-row:3; }
+  .gallery-mosaic > div:nth-child(7){ grid-column:1 / 3; grid-row:4; }
+  .footer-grid{ grid-template-columns:1fr 1fr; gap:30px; }
+  .stats-row{ grid-template-columns:repeat(2,1fr); gap:14px; }
+  .topbar-info{ display:none; }
+  .header-link{ display:none; }
+  .sticky-bottom{ left:16px; right:16px; transform:none; }
+}
+@media (max-width:600px){
+  .drawer{ width:100%; right:-100%; }
+  .drawer.open{ right:0; }
+  .header-cta-row .cta-wa{ display:none; }
+}
+</style>
+</head>
+<body>
+
+<div class="mokap-banner">
+  Sunlit Forest · VENUS Tek-Proje Landing · Reklam akışı için hazır
+  <a href="../index_mockups.html">Galeriye dön ►</a>
+</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-info">
+      <span>Aphroditis 24 · Elliniko · Atina</span>
+      <span>realestate@avla.com.tr</span>
+      <span>+90 532 282 26 57</span>
+    </div>
+    <div class="lang">
+      <button class="active">TR</button>
+      <button>EN</button>
+      <button>RU</button>
+      <button>ZH</button>
+      <button>AR</button>
+      <button>FA</button>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER (LANDING — MINIMAL) -->
+<header class="header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <a class="brand" href="07_sunlit_forest.html">
+        <em>A</em>vla
+      </a>
+      <span class="brand-divider"></span>
+      <div class="project-mark">
+        Venus Athens Riviera
+        <small>Aphroditis 24 · Elliniko</small>
+      </div>
+    </div>
+    <div class="header-cta-row">
+      <a class="header-link" href="#daireler">Daireler</a>
+      <a class="header-link" href="#gv">Golden Visa</a>
+      <a class="header-link" href="#konum">Konum</a>
+      <a class="header-link" href="#sss">SSS</a>
+      <a class="cta-wa" href="https://wa.me/905322822657?text=Venus%20Athens%20Riviera%20hakkında%20bilgi%20almak%20istiyorum">
+        <span style="font-size:15px;">▶</span> WhatsApp
+      </a>
+      <button class="cta-form-trigger" onclick="openDrawer()">
+        Bilgi Al →
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eye">❋ Athens Riviera · 2027 Q4</div>
+      <h1>Ellinikon'un <em>kıyısında</em>,<br>Avrupa'nın <span class="acc">eşiğinde</span>.</h1>
+      <p class="hero-lead">
+        <strong>Venus Athens Riviera</strong>, Atina'nın yeni odak noktası
+        Hellinikon'da, Aphroditis 24 adresinde yükselen <strong>86 ünitelik
+        butik koleksiyon</strong>. Tier-3 Golden Visa uyumlu, marina manzaralı,
+        anahtar teslim mobilyalı.
+      </p>
+      <div class="hero-cta-row">
+        <button class="btn btn-primary" onclick="openDrawer()">Tüm tipleri görmek istiyorum →</button>
+        <a class="btn btn-ghost" href="#daireler">Fiyat &amp; tipler</a>
+      </div>
+      <div class="stats-row">
+        <div class="stat-cell">
+          <div class="stat-num">€780<em>K</em></div>
+          <div class="stat-lab">Başlangıç</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">86</div>
+          <div class="stat-lab">Toplam ünite</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">Q4<em>27</em></div>
+          <div class="stat-lab">Teslim</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">7<em>%</em></div>
+          <div class="stat-lab">Yıllık getiri tah.</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-mosaic">
+      <div>
+        <span class="hero-leaf">❋ Spotlight</span>
+        <div class="hero-tag-bottom">
+          <div class="hero-tag-bottom-lab">Marina manzarası</div>
+          <div class="hero-tag-bottom-val">86 ünite · Tier 3</div>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FACT STRIP -->
+<div class="fact-strip">
+  <div class="fact-strip-inner">
+    <div class="fs-item">
+      <div class="fs-lab">Geliştirici</div>
+      <div class="fs-val">Zafido Holding Hellas</div>
+    </div>
+    <div class="fs-item">
+      <div class="fs-lab">Konum</div>
+      <div class="fs-val">Elliniko · Athens Riviera</div>
+    </div>
+    <div class="fs-item">
+      <div class="fs-lab">Daire tipleri</div>
+      <div class="fs-val">1+1 / 2+1 / 3+1</div>
+    </div>
+    <div class="fs-item">
+      <div class="fs-lab">m² aralığı</div>
+      <div class="fs-val">68 — 215 m²</div>
+    </div>
+    <div class="fs-tier">★ Tier 3 · Golden Visa</div>
+  </div>
+</div>
+
+<!-- CONCEPT -->
+<section class="section section-paper" id="proje">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 01 · Konsept</div>
+      <h2 class="section-title">Atina Riviera'nın<br><em>en yeni</em> adresi.</h2>
+    </div>
+    <p class="section-lead">
+      Hellinikon dönüşüm projesinin tam odağında. Saronik Körfezi'ne bakan
+      dik yamaca yerleşmiş açılı kütleler — tüm ünitelere deniz manzarası.
+    </p>
+  </div>
+  <div class="concept-grid">
+    <div class="concept-text">
+      <p>
+        Mimar <strong>Costas Anastasiou</strong>, geleneksel Yunan beyazını ışıkla
+        oynayan dolu/boş cephe ritmiyle yeniden yorumlamış. Mermer beyaz hatlar,
+        Akdeniz'in yeşili, Athens Riviera'nın eşiği.
+      </p>
+      <p>
+        Zemin katta <strong>1.200 m²'lik ortak tesis</strong>: kapalı/açık havuz,
+        24 saat concierge, fitness, sauna, sinema salonu, çocuk klübü. Glyfada
+        Marinası'na yürüme mesafesi, deniz kıyısına özel araç servisi.
+      </p>
+      <p>
+        Teslim sonrası <strong>Avla-yönetilen kira programı</strong>: Athens
+        Riviera'da otel-tipi konsept, yıllık net %5.5–7 getiri tahmini.
+      </p>
+    </div>
+    <div class="concept-mosaic">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPES -->
+<section class="section section-mint" id="daireler">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 02 · Daire Tipleri</div>
+      <h2 class="section-title">Sınırlı sayıda,<br><em>hızla</em> tükeniyor.</h2>
+    </div>
+    <p class="section-lead">
+      86 ünitenin 34'ü ön rezervasyon aşamasında ayrıldı. Premium pakete
+      İtalyan mutfak (Boffi), Bulthaup banyo ve Crestron akıllı ev sistemi dahil.
+    </p>
+  </div>
+  <div class="types-grid">
+    <div class="type-card">
+      <div class="type-tag">❋ Studio Stüdyo</div>
+      <div class="type-name">1+1</div>
+      <div class="type-size">68 — 78 m² · 22 ünite</div>
+      <div class="type-price-lab">Başlangıç</div>
+      <div class="type-price">€780K</div>
+      <ul class="type-features">
+        <li>Marina manzaralı yatak odası</li>
+        <li>Geniş Fransız balkon</li>
+        <li>Boffi mutfak</li>
+        <li>Anahtar teslim mobilyalı</li>
+      </ul>
+      <button class="type-cta" onclick="openDrawer()">Müsait üniteleri gör →</button>
+    </div>
+
+    <div class="type-card featured">
+      <div class="type-corner">En Çok Talep</div>
+      <div class="type-tag">❋ Aile Önerisi</div>
+      <div class="type-name">2+1</div>
+      <div class="type-size">95 — 130 m² · 38 ünite</div>
+      <div class="type-price-lab">Başlangıç</div>
+      <div class="type-price">€890K</div>
+      <ul class="type-features">
+        <li>Tier-3 Golden Visa uyumlu</li>
+        <li>Çift cepheli salon</li>
+        <li>Bulthaup ana banyo</li>
+        <li>Akıllı ev (Crestron)</li>
+        <li>İki ünitede teras + jakuzi</li>
+      </ul>
+      <button class="type-cta" onclick="openDrawer()">Yerleşim planı iste →</button>
+    </div>
+
+    <div class="type-card">
+      <div class="type-tag">❋ Penthouse Aile</div>
+      <div class="type-name">3+1</div>
+      <div class="type-size">160 — 215 m² · 26 ünite</div>
+      <div class="type-price-lab">Başlangıç</div>
+      <div class="type-price">€1.45M</div>
+      <ul class="type-features">
+        <li>Özel asansör girişi (top katlar)</li>
+        <li>Çift balkon + teras</li>
+        <li>Şofben + servis bölümü</li>
+        <li>Marina + Akropol manzarası</li>
+      </ul>
+      <button class="type-cta" onclick="openDrawer()">Penthouse opsiyonları →</button>
+    </div>
+  </div>
+  <div class="types-foot">
+    <div class="types-foot-text">
+      <strong>Şu anki müsaitlik:</strong> 52 / 86 ünite (60%). Erken-aşama
+      fiyatlandırma 2026 Q3'e kadar geçerli — sonrasında %8-12 fiyat artışı
+      bekleniyor. <strong>Komisyonsuz:</strong> Avla ücretini geliştirici öder.
+    </div>
+    <button class="btn btn-primary" onclick="openDrawer()">Güncel fiyat listesini iste →</button>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-warm" id="galeri">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 03 · Galeri</div>
+      <h2 class="section-title">İç &amp; dış mekan<br><em>render'lar</em>.</h2>
+    </div>
+    <p class="section-lead">
+      Mimari render'lar son revize edildi. Saha ziyaretine
+      katılmak isteyenler için WhatsApp üzerinden tarih ayarlıyoruz.
+    </p>
+  </div>
+  <div class="gallery-mosaic">
+    <div><span class="gallery-cap">Cephe · Aphroditis 24</span></div>
+    <div><span class="gallery-cap">Salon · 2+1</span></div>
+    <div><span class="gallery-cap">Yatak odası</span></div>
+    <div><span class="gallery-cap">Lobby</span></div>
+    <div><span class="gallery-cap">Mutfak · Boffi</span></div>
+    <div><span class="gallery-cap">Ortak tesis</span></div>
+    <div><span class="gallery-cap">Yan cephe + teras</span></div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section section-paper" id="donanim">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 04 · Tesis Donanımı</div>
+      <h2 class="section-title">5-yıldızlı otel<br><em>hizmetleri</em> · 1.200 m².</h2>
+    </div>
+    <p class="section-lead">
+      Ortak tesis alanı tüm sakinler için 7/24 açık. Yat sahibi olanlar için
+      Glyfada Marinası bağlantısı; köpek dostlarınız için özel park.
+    </p>
+  </div>
+  <div class="amenities-grid">
+    <div class="am-card"><div class="am-icon">~</div><div class="am-name">Sonsuzluk Havuzu</div><div class="am-text">Marinaya bakan açık + ısıtmalı kapalı havuz.</div></div>
+    <div class="am-card"><div class="am-icon">★</div><div class="am-name">24-saat Concierge</div><div class="am-text">İngilizce, Yunanca, Türkçe konuşan görevli.</div></div>
+    <div class="am-card"><div class="am-icon">▲</div><div class="am-name">Fitness + Spa</div><div class="am-text">Technogym ekipmanları, grup ders alanı, sauna.</div></div>
+    <div class="am-card"><div class="am-icon">●</div><div class="am-name">Çocuk Klübü</div><div class="am-text">3-12 yaş için donanımlı oyun + öğrenme alanı.</div></div>
+    <div class="am-card"><div class="am-icon">▶</div><div class="am-name">Sinema Salonu</div><div class="am-text">12 kişilik özel sinema + konsol zonu.</div></div>
+    <div class="am-card"><div class="am-icon">⊙</div><div class="am-name">İş Lobisi</div><div class="am-text">Co-working masaları + 2 toplantı odası.</div></div>
+    <div class="am-card"><div class="am-icon">⌂</div><div class="am-name">Şarap Mahzeni</div><div class="am-text">Klimatize ortak depo + özel tadım odası.</div></div>
+    <div class="am-card"><div class="am-icon">~</div><div class="am-name">Marina Servisi</div><div class="am-text">Glyfada Marinası araç + yat parkı bağlantısı.</div></div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section section-mint" id="konum">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 05 · Konum</div>
+      <h2 class="section-title">Aphroditis 24 ·<br><em>Elliniko</em>.</h2>
+    </div>
+    <p class="section-lead">
+      Atina'nın yeni Avrupa'daki "Saint-Tropez"si: Hellinikon kentsel
+      dönüşüm bölgesinin tam kalbinde, marinaya yürüme mesafesinde.
+    </p>
+  </div>
+  <div class="location-inner">
+    <div class="location-text">
+      <ul class="location-poi">
+        <li><b>Glyfada Marinası</b><span>4 dk · 2.1 km</span></li>
+        <li><b>The Ellinikon AVM</b><span>3 dk · 1.4 km</span></li>
+        <li><b>Vouliagmeni Plajı</b><span>10 dk · 7 km</span></li>
+        <li><b>Atina Havaalanı (ATH)</b><span>22 dk · 18 km</span></li>
+        <li><b>Atina Merkez (Syntagma)</b><span>27 dk · 24 km</span></li>
+        <li><b>Pire Limanı</b><span>20 dk · 17 km</span></li>
+      </ul>
+    </div>
+    <div class="location-map">
+      <div class="map-pin">V</div>
+      <div class="map-address">
+        <div class="map-address-l">Adres</div>
+        <div class="map-address-v">Aphroditis 24, Elliniko 167 77</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOLDEN VISA TIMELINE -->
+<section class="section section-dark" id="gv">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 06 · Golden Visa</div>
+      <h2 class="section-title">€800K ile <em>Avrupa<br>Birliği</em> ikamet izni.</h2>
+    </div>
+    <p class="section-lead">
+      Yasa 5100/2024 ile yenilenen Tier-3 eşiği. Venus Riviera bu eşik için
+      uygun; 6-9 ay içinde aile dahil 5 yıl oturum izni.
+    </p>
+  </div>
+  <div class="gv-detail">
+    <div class="gv-card-hero">
+      <span class="gv-tier-badge">★ Tier 3 · Premium</span>
+      <div class="gv-amount"><sup>€</sup>800<span style="font-size:36px;">K</span></div>
+      <div class="gv-amount-meta">Minimum yatırım eşiği · Atina merkez, Pire, Riviera, Mikonos</div>
+      <ul class="gv-benefits">
+        <li>5 yıl yenilenebilir oturum izni</li>
+        <li>Eş + 21 yaş altı çocuklar + ebeveynler dahil</li>
+        <li>Tüm Schengen alanına vizesiz seyahat</li>
+        <li>7 yıl sonra vatandaşlık başvurusu opsiyonu</li>
+        <li>Yatırımdan çıkışta Avrupa pasaportu hala geçerli</li>
+        <li>AB içinde sınırsız yaşam + iş kurma hakkı</li>
+      </ul>
+    </div>
+    <ol class="timeline">
+      <li class="step">
+        <span class="step-num">1</span>
+        <div class="step-title">Tanışma + bütçe analizi</div>
+        <div class="step-text">Avla ekibiyle WhatsApp veya İstanbul ofisinde 30 dk. Hedefiniz net: ikamet mi, yatırım mı, ikisi birden mi?</div>
+        <div class="step-meta">Hafta 1</div>
+      </li>
+      <li class="step">
+        <span class="step-num">2</span>
+        <div class="step-title">Daire seçimi + ön rezervasyon</div>
+        <div class="step-text">Venus'tan size uygun 2-3 üniteyi süzeriz. €15K ön ödeme ile 30 gün opsiyon. Sanal tur + Atina ziyareti.</div>
+        <div class="step-meta">Hafta 2-3</div>
+      </li>
+      <li class="step">
+        <span class="step-num">3</span>
+        <div class="step-title">Hukuki + finansal hazırlık</div>
+        <div class="step-text">Yunan AFM vergi numarası, banka hesabı, vekâletname. Avla-anlaşmalı avukat ücretleri pakete dahil.</div>
+        <div class="step-meta">Hafta 4-6</div>
+      </li>
+      <li class="step">
+        <span class="step-num">4</span>
+        <div class="step-title">Sözleşme + ödeme</div>
+        <div class="step-text">Noter huzurunda satış sözleşmesi. %30 peşinat, kalan inşaat takvimine bağlı 3 dilim. Tapu tescili.</div>
+        <div class="step-meta">Ay 2-3</div>
+      </li>
+      <li class="step">
+        <span class="step-num">5</span>
+        <div class="step-title">Golden Visa başvurusu</div>
+        <div class="step-text">Tapudan sonra biyometrik + sağlık sigortası + başvuru. Ailenize 5 yıllık oturum kartı 6-9 ay içinde.</div>
+        <div class="step-meta">Ay 3-12</div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- AVLA 3 ADVANTAGES -->
+<section class="section section-paper">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 07 · Neden Avla</div>
+      <h2 class="section-title">Avla ile alım,<br><em>üç ayrıcalık</em> bir arada.</h2>
+    </div>
+    <p class="section-lead">
+      Geliştiriciyle direkt çalışan tek Türk butik gayrimenkul firması.
+      Komisyonu geliştirici öder, alıcı ekstra masraf yapmaz.
+    </p>
+  </div>
+  <div class="adv-grid">
+    <div class="adv-card">
+      <div class="adv-num">01</div>
+      <h3 class="adv-title">Komisyonsuz alım</h3>
+      <p class="adv-text">
+        Avla'nın <strong>geliştiriciyle doğrudan anlaşması</strong> var.
+        Aracılık ücretini Zafido Holding Hellas öder. Siz sadece daire
+        bedelini + standart Yunan vergilerini ödersiniz.
+      </p>
+    </div>
+    <div class="adv-card">
+      <div class="adv-num">02</div>
+      <h3 class="adv-title">Türkçe hukuki süreç</h3>
+      <p class="adv-text">
+        Anlaşmalı Yunan avukatımız <strong>Türkçe konuşur</strong>; AFM
+        numarası, vekâletname, tapu süreci, Golden Visa başvurusu tek
+        elden yürür. Avla projeyi anahtar teslim yönetir.
+      </p>
+    </div>
+    <div class="adv-card">
+      <div class="adv-num">03</div>
+      <h3 class="adv-title">Teslim sonrası kira yönetimi</h3>
+      <p class="adv-text">
+        Teslimden sonra dilerseniz <strong>Avla kira programına</strong>
+        dahil olur, otel-tipi kısa kira veya yıllık kira yönetimini
+        biz yaparız. Yıllık raporlama + temizlik + bakım dahil.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPER TRUST -->
+<section class="section section-warm">
+  <div class="dev-trust">
+    <div class="dev-trust-photo">
+      <div class="dev-trust-tag">
+        <div class="dev-trust-tag-l">Geliştirici</div>
+        <div class="dev-trust-tag-v">Zafido Holding Hellas</div>
+      </div>
+    </div>
+    <div class="dev-trust-body">
+      <div class="section-eye">❋ 08 · Geliştirici Güveni</div>
+      <h3><em>Zafido</em> Holding Hellas — Yunan inşaatın 32 yıllık adı.</h3>
+      <p>
+        1994'te Atina'da kurulan Zafido, Yunanistan'da 14 proje + 1.180
+        ünite teslim etmiş bir aile şirketi. Athens Riviera bölgesindeki
+        4. lansmanları olan Venus, en yüksek bütçeli ve mimari iddiası en
+        güçlü projeleri.
+      </p>
+      <p>
+        Tüm projelerde <strong>%100 zamanında teslim</strong> sicili. Atina
+        Ticaret Odası, ELXA (Yunan Müteahhitler Birliği) üyesi. Bankalarla
+        çapraz kontrol, inşaat ipoteği, satıcı garantisi.
+      </p>
+      <div class="dev-trust-stats">
+        <div class="dts-cell">
+          <div class="dts-num">32<em style="font-style:italic;color:var(--coral);">yıl</em></div>
+          <div class="dts-lab">İnşaat tecrübesi</div>
+        </div>
+        <div class="dts-cell">
+          <div class="dts-num">14</div>
+          <div class="dts-lab">Tamamlanan proje</div>
+        </div>
+        <div class="dts-cell">
+          <div class="dts-num">1.180<em style="font-style:italic;color:var(--coral);">+</em></div>
+          <div class="dts-lab">Teslim edilen ünite</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT CALC -->
+<section class="section section-dark" id="hesap">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 09 · Yatırım Simülatörü</div>
+      <h2 class="section-title">Bütçe + GV =<br><em>30 saniyelik</em> fizibilite.</h2>
+    </div>
+    <p class="section-lead">
+      Bütçenizi seçin, AI Concierge size uygun daire tipini ve yıllık getiriyi
+      hesaplasın. Detaylı PDF rapor WhatsApp üzerinden gelir.
+    </p>
+  </div>
+  <div class="calc-inner">
+    <div class="calc-text">
+      <p class="calc-lead">
+        Hesaplamalar emsal kira getirileri (Spitogatos/XE Greece veri tabanı)
+        + AVLA pazar tahminleriyle yapılmıştır. Net rakam vergi sonrası,
+        Avla kira yönetim ücreti dahildir.
+      </p>
+    </div>
+    <div class="calc-form">
+      <div class="calc-row">
+        <label>Yatırım bütçeniz</label>
+        <select>
+          <option>€780K — €890K (1+1)</option>
+          <option selected>€890K — €1.2M (2+1)</option>
+          <option>€1.45M — €1.8M (3+1 std)</option>
+          <option>€1.8M+ (3+1 penthouse)</option>
+        </select>
+      </div>
+      <div class="calc-row">
+        <label>Kullanım amacı</label>
+        <select>
+          <option>İkinci konut</option>
+          <option selected>Yatırım + GV</option>
+          <option>Tatil + kısa kira</option>
+          <option>Yıllık kira</option>
+        </select>
+      </div>
+      <div class="calc-row">
+        <label>Aile büyüklüğü</label>
+        <select>
+          <option>1-2 kişi</option>
+          <option selected>3-4 kişi</option>
+          <option>5+ kişi</option>
+        </select>
+      </div>
+      <div class="calc-result">
+        <div class="calc-result-item">
+          <b>Önerilen tip</b>
+          <span>2+1 · 105 m²</span>
+        </div>
+        <div class="calc-result-item">
+          <b>Yaklaşık fiyat</b>
+          <span>€940K</span>
+        </div>
+        <div class="calc-result-item">
+          <b>Tahmini yıllık kira</b>
+          <span>€55K-65K</span>
+        </div>
+        <div class="calc-result-item">
+          <b>GV uyumu</b>
+          <span>Tier 3 ✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-paper" id="sss">
+  <div class="section-head">
+    <div>
+      <div class="section-eye">❋ 10 · Sık Sorulan Sorular</div>
+      <h2 class="section-title">Akla gelen<br><em>her</em> soru.</h2>
+    </div>
+    <p class="section-lead">
+      Aşağıda yoksa WhatsApp'tan sorun, 24 saat içinde uzman cevap.
+      AI Concierge da Türkçe destek veriyor.
+    </p>
+  </div>
+  <div class="faq-inner">
+    <div class="faq-list">
+      <details>
+        <summary>Venus Athens Riviera Tier-3 Golden Visa için uygun mu?</summary>
+        <div class="faq-body">
+          <strong>Evet.</strong> Aphroditis 24 adresi Atina'nın güney yakası
+          (Hellinikon belediye sınırları) içinde; bu bölge Yasa 5100/2024
+          uyarınca <strong>€800K Tier-3 eşiğine</strong> tabi. 2+1 ve üzeri
+          tüm üniteler eşiği rahat geçer. 1+1 stüdyolar (€780K-880K) bazıları
+          uygun, bazıları değil — Avla danışmanı size doğru üniteleri süzer.
+        </div>
+      </details>
+      <details>
+        <summary>Tek aile birden fazla daire alabilir mi?</summary>
+        <div class="faq-body">
+          Evet. Golden Visa eşiği için <strong>tek mülk €800K olmak zorunda
+          değil</strong> — toplam yatırım €800K'yi geçen birden fazla ünite
+          ile de aynı haklar elde edilir. Aile içinde paylaşımda ortak isim
+          + kişisel pay düzenlemeleri Avla avukatı tarafından yapılır.
+        </div>
+      </details>
+      <details>
+        <summary>Türkiye'den ödeme nasıl yapılır?</summary>
+        <div class="faq-body">
+          Türk bankası → Yunan banka hesabınız → Zafido escrow hesabı. Avla
+          önce <strong>Yunan banka hesabı açma süreci</strong>nde size eşlik
+          eder (AFM numarası + vekâletname ile uzaktan da mümkün).
+          Türkiye'den döviz çıkışı standart Bireysel Bankacılık Kapsamı
+          dahilinde yapılır.
+        </div>
+      </details>
+      <details>
+        <summary>Teslimden önce alacağım kira garantili mi?</summary>
+        <div class="faq-body">
+          Zafido inşaat sırasında <strong>kira garantisi vermez</strong>;
+          ancak Avla, teslimden sonraki ilk 12 ay için <strong>%5 net kira
+          garantisi</strong> sunabilir (opsiyonel, ek anlaşma). Kira yönetim
+          ücretimiz brüt kiranın %15'i; %5 garanti bu ücret dahil hesaplanır.
+        </div>
+      </details>
+      <details>
+        <summary>Avla'nın komisyon almadığına nasıl emin olabilirim?</summary>
+        <div class="faq-body">
+          Geliştirici ile Avla arasındaki <strong>aracılık sözleşmesini</strong>
+          (komisyon oranı + ödeme şartları görünür halde) tanışma toplantısında
+          size gösteririz. Sizin imzalayacağınız Zafido satış sözleşmesinde
+          herhangi bir aracılık ücreti satırı yer almaz — sadece daire bedeli
+          + standart Yunan emlak vergisi (KDV %24 yeni inşaatta).
+        </div>
+      </details>
+      <details>
+        <summary>Satışta vazgeçersem ön ödeme iade ediliyor mu?</summary>
+        <div class="faq-body">
+          €15K ön rezervasyon ödemesi <strong>satış sözleşmesi imzalandıktan
+          sonra iade edilemez</strong>; satıştan vazgeçerseniz cayma bedeli
+          olarak kalır. Sözleşme öncesi 30 günlük opsiyon süresinde geri çekme
+          mümkün — €15K iade edilir. Detay sözleşmede madde-bende geçer.
+        </div>
+      </details>
+      <details>
+        <summary>Sami Akbeniz veya Avla ekibiyle nasıl konuşurum?</summary>
+        <div class="faq-body">
+          WhatsApp <strong>+90 532 282 26 57</strong> (Sami Bey doğrudan).
+          E-posta <strong>realestate@avla.com.tr</strong>. İstanbul Beşiktaş
+          ofisinde kahve eşliğinde 30 dakika; ya da Zoom/Google Meet'te
+          çevrimiçi. Atina ziyaretiniz için biletinizi alın, Avla ekibi
+          havaalanından alır.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section">
+  <div class="cta-banner">
+    <div class="cta-banner-text">
+      <h2>24 saat içinde<br><em>sizi biz arayalım</em>.</h2>
+      <p>WhatsApp'tan tek mesaj, Atina'daki Avla ekibi sizi arar. Türkçe konuşan danışman, bütçenize göre 2-3 ünite, Golden Visa fizibilitesi ve sanal tur. Komisyonsuz.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <button class="btn btn-primary" onclick="openDrawer()">Beni arayın →</button>
+      <a class="btn btn-ghost" href="https://wa.me/905322822657?text=Venus%20Athens%20Riviera%20hakkında%20bilgi%20almak%20istiyorum">
+        ▶ WhatsApp ile yaz
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="07_sunlit_forest.html"><em>A</em>vla</a>
+      <p>Yunanistan odaklı lüks gayrimenkul + Golden Visa atölyesi. İstanbul merkezli, Atina'da yerinde ekibi olan tek Türk butik firma.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Venus Athens Riviera</h4>
+      <a href="#proje">Konsept</a>
+      <a href="#daireler">Daire Tipleri</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#konum">Konum</a>
+      <a href="#gv">Golden Visa</a>
+      <a href="#sss">SSS</a>
+    </div>
+    <div class="footer-col">
+      <h4>İletişim</h4>
+      <a href="mailto:realestate@avla.com.tr">realestate@avla.com.tr</a>
+      <a href="tel:+905322822657">+90 532 282 26 57</a>
+      <a href="tel:+902164705381">+90 216 470 53 81</a>
+      <a href="https://wa.me/905322822657">WhatsApp</a>
+      <a href="07_sunlit_forest.html">avlarealestate.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AVLA Gayrimenkul A.Ş. · Tüm hakları saklıdır.</span>
+    <span>Sunlit Forest · VENUS Landing · Tek-proje versiyonu</span>
+  </div>
+</footer>
+
+<!-- STICKY BOTTOM CTA -->
+<div class="sticky-bottom">
+  <div class="sticky-bottom-text">
+    <strong>€780K'dan başlayan</strong>
+    Tier-3 GV uyumlu · 86 ünite
+  </div>
+  <button class="sticky-bottom-btn" onclick="openDrawer()">Bilgi Al →</button>
+</div>
+
+<!-- DRAWER + OVERLAY -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Venus için <em>bilgi</em> alın</h3>
+    <button class="drawer-close" onclick="closeDrawer()">×</button>
+  </div>
+  <div class="drawer-body">
+    <p class="drawer-intro">
+      Formu doldurun, <strong>24 saat içinde Türkçe konuşan Avla
+      danışmanı</strong> sizi WhatsApp veya telefonla arar. Bilgileriniz
+      sadece Avla ile paylaşılır.
+    </p>
+    <form onsubmit="event.preventDefault(); alert('Form gönderildi (mokap demo). Gerçekte WhatsApp\'a yönlendirilecek.'); closeDrawer();">
+      <div class="drawer-field">
+        <label>Ad soyad *</label>
+        <input type="text" required placeholder="Ahmet Yılmaz">
+      </div>
+      <div class="drawer-field">
+        <label>Telefon (WhatsApp) *</label>
+        <input type="tel" required placeholder="+90 5xx xxx xx xx">
+      </div>
+      <div class="drawer-field">
+        <label>E-posta</label>
+        <input type="email" placeholder="ornek@email.com">
+      </div>
+      <div class="drawer-field">
+        <label>Bütçe aralığı</label>
+        <select>
+          <option>€780K — €890K (1+1)</option>
+          <option selected>€890K — €1.2M (2+1)</option>
+          <option>€1.45M+ (3+1)</option>
+          <option>Henüz belirsiz</option>
+        </select>
+      </div>
+      <div class="drawer-field">
+        <label>Amaç</label>
+        <select>
+          <option selected>Golden Visa + yatırım</option>
+          <option>İkinci konut</option>
+          <option>Sadece kira getirisi</option>
+          <option>Tatil + kısa kira</option>
+        </select>
+      </div>
+      <div class="drawer-field">
+        <label>Mesajınız (opsiyonel)</label>
+        <textarea placeholder="Atina ziyaret tarihiniz, özel sorular, vs."></textarea>
+      </div>
+      <button type="submit" class="drawer-submit">▶ WhatsApp'a Gönder</button>
+    </form>
+  </div>
+  <div class="drawer-foot">
+    Doğrudan WhatsApp tercihi: <a href="https://wa.me/905322822657?text=Venus%20Athens%20Riviera%20hakkında%20bilgi%20almak%20istiyorum">+90 532 282 26 57</a>
+    · KVKK ile uyumlu, 3. taraflarla paylaşılmaz.
+  </div>
+</aside>
+
+<script>
+function openDrawer(){
+  document.getElementById('drawer').classList.add('open');
+  document.getElementById('drawerOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDrawer(){
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawerOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeDrawer(); });
+</script>
+
+</body>
+</html>
