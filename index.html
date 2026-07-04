@@ -93,11 +93,21 @@ button{font:inherit;border:0;cursor:pointer;background:none;color:inherit}
 
 /* ============ TOP SCARCITY ============ */
 .scarcity{
-  background:var(--sea-deep);color:var(--sand);padding:0 24px;
+  background:var(--sea-deep);color:var(--sand);padding:0 110px 0 24px;
   font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
   text-align:center;position:fixed;top:0;left:0;right:0;z-index:60;line-height:1.4;
   height:40px;display:flex;align-items:center;justify-content:center;
   box-sizing:border-box;
+}
+.lang-switch{position:absolute;right:14px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:2px;font-size:10.5px;letter-spacing:.22em}
+.lang-switch a,.lang-switch button{background:transparent;border:0;color:var(--sand);opacity:.45;cursor:pointer;font:inherit;letter-spacing:inherit;padding:4px 6px;text-transform:uppercase;font-weight:600;text-decoration:none;transition:opacity .2s,color .2s;display:inline-flex;align-items:center}
+.lang-switch a:hover,.lang-switch button:hover{opacity:.85}
+.lang-switch a.active,.lang-switch button.active{opacity:1;color:var(--gold-bright)}
+.lang-switch .lang-sep{opacity:.35;font-weight:300}
+@media (max-width:560px){
+  .scarcity{padding:0 86px 0 14px;font-size:10px}
+  .lang-switch{right:10px;font-size:10px}
+  .lang-switch button{padding:4px 4px}
 }
 .scarcity .s-line{display:inline}
 .scarcity strong{color:var(--gold-bright);font-weight:600}
@@ -243,19 +253,13 @@ table.inv-tbl .pill{display:inline-block;padding:5px 12px;font-size:10.5px;lette
 .pill.price{background:rgba(46,224,62,.14);color:#1ea82c;font-weight:600;margin-left:8px}
 
 /* Back-to-top button */
-.back-top,.down-jump{position:fixed;z-index:60;width:44px;height:44px;border-radius:50%;background:var(--gold);color:#fff;border:none;cursor:pointer;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(13,42,96,.35);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s,background .2s;box-sizing:border-box;padding:0;line-height:0;margin:0}
-/* Desktop: sadece back-top, sağ alt köşe */
-.back-top{display:flex;right:24px;bottom:24px}
-.down-jump{display:none;right:16px}
-.back-top.is-visible,.down-jump.is-visible{opacity:1;visibility:visible;transform:translateY(0)}
-.back-top:hover,.down-jump:hover{background:var(--ink)}
-.back-top svg,.down-jump svg{width:20px;height:20px;display:block}
-/* Mobile: yukarı üstte, aşağı altta — eşit çap 44px, aralarında 24px boşluk */
-/* Breakpoint sticky-cta-bar ile aynı (≤768) — tablet'te (769-880) masaüstü dock aktif */
+.back-top{position:fixed;z-index:60;width:48px;height:48px;border-radius:50%;background:#F08025;color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(13,42,96,.35);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s,background .2s;box-sizing:border-box;padding:0;line-height:0;margin:0;right:24px;bottom:24px}
+.back-top.is-visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-top:hover{background:var(--ink)}
+.back-top svg{width:22px;height:22px;display:block}
+/* Mobile: back-top WhatsApp dock üstüne kaydır */
 @media (max-width:768px){
-  .back-top,.down-jump{width:44px;height:44px;right:16px}
-  .down-jump{display:flex;bottom:calc(16px + env(safe-area-inset-bottom, 0px));opacity:1;visibility:visible;transform:translateY(0)}
-  .back-top{bottom:calc(84px + env(safe-area-inset-bottom, 0px))}
+  .back-top{width:48px;height:48px;right:16px;bottom:calc(86px + env(safe-area-inset-bottom, 0px))}
 }
 .inv-cta{text-align:center;margin-top:48px}
 .inv-cta .btn{display:inline-flex;margin:6px}
@@ -489,7 +493,7 @@ footer .copy{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   .brand{gap:10px}
   .brand-logo{width:36px;height:36px}
   .brand .name{font-size:20px;letter-spacing:.18em}
-  .brand .sub{font-size:8.5px;letter-spacing:.24em;margin-top:3px}
+  .brand .sub{font-size:9.5px;letter-spacing:.22em;margin-top:4px;display:block !important}
   .nav-links{display:none}
   .nav-cta{padding:8px 14px;font-size:10px;letter-spacing:.14em;flex-shrink:0;white-space:nowrap}
   .avla-bar{padding:22px 0}
@@ -572,8 +576,7 @@ footer .copy{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   .sticky-cta-bar .wa{background:#25d366}
   .sticky-cta-bar .wa:active{background:#1ebe57;transform:scale(.985)}
   .sticky-cta-bar a:focus-visible{outline:2px solid #fff;outline-offset:-3px}
-  /* back-top / down-jump'ı sticky bar'ın üzerine kaydır */
-  .down-jump{bottom:calc(80px + env(safe-area-inset-bottom, 0px)) !important}
+  /* back-top'u sticky bar + WhatsApp dock üstüne kaydır */
   .back-top{bottom:calc(148px + env(safe-area-inset-bottom, 0px)) !important}
 }
 
@@ -707,11 +710,16 @@ src="https://www.facebook.com/tr?id=263544950122179&ev=PageView&noscript=1"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- ============ TOP SCARCITY ============ -->
+<!-- ============ TOP SCARCITY + LANG ============ -->
 <div class="scarcity">
-  <span class="s-line"><strong>2. & 3. Kat Lansman</strong> · <span class="new">18 YENİ DAİRE</span> · Atina merkez yakını</span>
+  <span class="s-line"><strong>2. & 3. Kat Lansman</strong> · <span class="new">SON 9 DAİRE</span> · Atina merkez yakını</span>
   <span class="dot"></span>
   <span class="s-line">Avla Gayrimenkul A.Ş.'ye özel <strong>önemli indirimler · kira garantisi</strong></span>
+  <div class="lang-switch" role="group" aria-label="Dil seçimi">
+    <a class="active" data-lang="tr" aria-current="true" href="/">TR</a>
+    <span class="lang-sep">|</span>
+    <a data-lang="en" href="/en/">EN</a>
+  </div>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -746,15 +754,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div>
       <div class="eyebrow" style="color:var(--gold-bright)">Eleftheriou Venizelou 90 · Moschato · Atina</div>
       <h1>Atina'nın <em>güney kapısında</em>,<br>denizin <em>eşiğinde</em>.</h1>
-      <p class="lead">Pire ile Atina merkezi arasında | sahile 1.8 km | metroya 700 m | 2. ve 3. katta lansmana özel <strong>18 yeni daire</strong> | Golden Visa onaylı | 2028 Q2 teslim.</p>
+      <p class="lead">Pire ile Atina merkezi arasında | sahile 1.8 km | metroya 700 m | 2. ve 3. katta lansman, <strong>18 daireden son 9'u</strong> | Golden Visa onaylı | 2028 Q2 teslim.</p>
       <div class="hero-meta">
-        <div><span class="v">18</span><span class="l">Yeni Daire</span></div>
+        <div><span class="v">9 <small style="font-size:.5em;opacity:.65">/ 18</small></span><span class="l">Müsait Daire</span></div>
         <div><span class="v">€258K+</span><span class="l">Golden Visa</span></div>
         <div><span class="v">A</span><span class="l">Enerji Sınıfı</span></div>
         <div><span class="v">Q2 2028</span><span class="l">Teslim</span></div>
       </div>
       <div class="hero-actions">
-        <a href="#form" onclick="return openDrawer()" class="btn btn-gold">Kataloğu İste <span class="arrow">→</span></a>
+        <a href="./data/south-moschato-katalog.pdf" target="_blank" rel="noopener" class="btn btn-gold">Kataloğu Gör <span class="arrow">→</span></a>
         <a href="#daireler" class="btn btn-ghost">Daireleri Gör <span class="arrow">→</span></a>
       </div>
     </div>
@@ -869,8 +877,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="head reveal">
       <div class="eyebrow">Mevcut Daireler</div>
-      <h2>18 yeni daire · 2. & 3. kat</h2>
-      <p>Fiyat aralığı: <strong>€258.000 – €364.000</strong>. Tamamı Golden Visa <strong>€250K eşiği</strong> üstü. Detaylı katalog için iletişime geçin.</p>
+      <h2>18 daire · <em>9 müsait</em> · 2. & 3. kat</h2>
+      <p>Fiyat aralığı: <strong>€258.000 – €375.000</strong>. Tamamı Golden Visa <strong>€250K eşiği</strong> üstü; 5 ünite <strong>Akropol manzaralı</strong>. Detaylı katalog için iletişime geçin.</p>
       <div class="inv-status">
         <span><span class="b av"></span> Mevcut</span>
         <span><span class="b ho"></span> Rezerve</span>
@@ -904,7 +912,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="invEmpty" style="display:none;text-align:center;padding:48px;color:#7e8a98">Bu kategoride daire kalmadı.</div>
 
     <div class="inv-cta">
-      <a href="#form" onclick="return openDrawer()" class="btn btn-gold">Fiyat Listesi & Katalog İste <span class="arrow">→</span></a>
+      <a href="./data/south-moschato-katalog.pdf" target="_blank" rel="noopener" class="btn btn-gold">Kataloğu Gör <span class="arrow">→</span></a>
       <p class="inv-note">m² ve balkon değerleri ±3% varyasyonludur — kesin değerler ve final fiyat için katalog isteyin. Envanter günlük güncellenir.</p>
     </div>
   </div>
@@ -1279,17 +1287,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="wa" href="https://wa.me/905322822657?text=SOUTH%20Moschato%20i%C3%A7in%20bilgi%20almak%20istiyorum" target="_blank" rel="noopener" data-cta="float_whatsapp_moschato" data-tip="Türkçe destek · Anında iletişim" aria-label="WhatsApp ile yaz">
     <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39-.077 0-.139-.027-.207-.066-.508-.252-.917-.452-1.391-.794-.474-.342-.929-.78-1.366-1.27a14.6 14.6 0 0 1-1.067-1.444c-.295-.461-.582-1.029-.582-1.578v-.06c.018-.502.318-.787.624-1.124.197-.218.413-.451.413-.696 0-.198-.057-.405-.142-.583-.142-.297-.295-.601-.443-.903-.142-.297-.275-.591-.434-.881-.149-.272-.317-.471-.624-.471-.099 0-.198.005-.297.005-.297 0-.598.025-.881.118-.532.169-.97.717-1.077 1.244-.045.218-.045.443-.045.665 0 .642.158 1.265.387 1.857.346.892.802 1.738 1.339 2.531.819 1.197 1.799 2.244 2.945 3.116.567.434 1.18.797 1.834 1.081.726.317 1.487.524 2.275.628.157.022.314.029.471.029.811 0 1.605-.207 2.207-.752.252-.228.461-.5.581-.83.115-.317.075-.602-.057-.892-.166-.366-.65-.575-1.013-.762-.408-.21-.834-.378-1.279-.502a2.59 2.59 0 0 0-.66-.09zM15.998 4.5c-6.347 0-11.498 5.151-11.498 11.498 0 2.083.563 4.105 1.626 5.874l.293.475-1.235 4.501 4.622-1.213.45.272a11.4 11.4 0 0 0 5.737 1.568h.005c6.347 0 11.498-5.151 11.498-11.498S22.345 4.5 15.998 4.5zm0 21.143h-.004a9.59 9.59 0 0 1-4.875-1.335l-.349-.207-3.62.95.967-3.527-.227-.361a9.55 9.55 0 0 1-1.463-5.165c.001-5.288 4.305-9.591 9.595-9.591 2.564 0 4.974.999 6.786 2.812a9.53 9.53 0 0 1 2.808 6.787c-.002 5.291-4.306 9.594-9.594 9.594z"/></svg>
   </a>
-  <a class="call" href="tel:+905322822657" data-cta="float_call_moschato" data-tip="Türkçe destek · Anında iletişim" aria-label="Hemen ara">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg>
-  </a>
 </div>
 
-<!-- ============ BACK TO TOP + DOWN JUMP ============ -->
+<!-- ============ BACK TO TOP ============ -->
 <button type="button" class="back-top" id="backTop" aria-label="Yukarı dön" onclick="window.scrollTo({top:0,behavior:'smooth'})">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 15 12 9 18 15"/></svg>
-</button>
-<button type="button" class="down-jump" id="downJump" aria-label="İletişim formuna in" onclick="(function(){var el=document.getElementById('contactForm');if(!el)return;var n=document.querySelector('nav');var off=(n?n.offsetHeight:60)+10;window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-off,behavior:'smooth'});})()">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
 </button>
 
 <!-- ============ FOOTER ============ -->
@@ -1707,6 +1709,9 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 </script>
+
+<!-- Athena · Yapay Zekâ Golden Visa Danışmanı (sağ alt widget) -->
+<script src="https://athena-bot.vercel.app/widget.js" defer></script>
 
 </body>
 </html>
