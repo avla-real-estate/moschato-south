@@ -486,8 +486,29 @@ footer .copy{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   .hero-actions{margin-top:32px;gap:10px}
   .btn{padding:14px 22px;font-size:10.5px;letter-spacing:.2em}
   .scroll-cue{display:none}
-  /* Mobil: scarcity gizle, nav kompakt — tek satır */
-  .scarcity{display:none}
+  /* Mobil: kıtlık şeridinin METNİ gizlenir, nav kompakt — tek satır.
+     ⚠️ .scarcity display:none YAPILMAZ: dil seçici (.lang-switch) bu şeridin
+     tek çocuğu; üst öğe gizlenirse seçici de gider. Şerit yalnız taşıyıcı
+     olarak (sıfır yükseklik, saydam, tıklanamaz) ayakta bırakılır. */
+  .scarcity{
+    display:block;height:0;min-height:0;padding:0;border:0;
+    background:transparent;overflow:visible;pointer-events:none;z-index:70
+  }
+  .scarcity .s-line,.scarcity .dot{display:none}
+  /* Dil seçici mobilde her zaman erişilebilir — nav'ın sağ boşluğuna sabit */
+  .lang-switch{
+    pointer-events:auto;position:fixed;top:6px;right:8px;transform:none;
+    display:inline-flex;align-items:center;gap:0;
+    font-size:12px;letter-spacing:.14em;
+    background:rgba(6,26,54,.82);border:1px solid rgba(184,149,106,.45);
+    border-radius:999px;padding:0 2px
+  }
+  .lang-switch a{
+    min-width:44px;min-height:44px;padding:0 6px;
+    justify-content:center;opacity:.72
+  }
+  .lang-switch a.active{opacity:1;color:var(--gold-bright)}
+  .lang-switch .lang-sep{opacity:.4}
   nav{top:0;padding:10px 14px;margin-top:0}
   .nav-wrap{flex-wrap:nowrap;gap:10px;justify-content:space-between;align-items:center}
   .brand{gap:10px}
